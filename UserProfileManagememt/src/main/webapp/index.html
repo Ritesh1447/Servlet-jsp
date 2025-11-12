@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Welcome Page</title>
+    <style>
+        /* 1. Reset and Center Container */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9ecef; /* Light background */
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            min-height: 100vh; /* Full viewport height */
+            margin: 0;
+        }
+
+        /* 2. Form Card Styling */
+        .login-card {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Elevated shadow */
+            width: 100%;
+            max-width: 350px;
+            text-align: center;
+        }
+
+        /* 3. Heading */
+        h1 {
+            color: #343a40;
+            font-size: 28px;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        /* 4. Form Layout */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px; /* Space between input fields */
+        }
+        
+        /* 5. Input Fields */
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ced4da;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            border-color: #007bff;
+            outline: none;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+
+        /* 6. Input Labels/Text */
+        /* Grouping the text outside the input is tricky with the original HTML, 
+           so we target the text nodes near the inputs for styling */
+        form > br {
+            display: none; /* Hide the original breaks */
+        }
+        
+        /* 7. Submit Button */
+        input[type="submit"] {
+            background-color: #007bff; /* Primary blue */
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        /* 8. Registration Link */
+        .register-link {
+            display: block; 
+            margin-top: 25px;
+            color: #6c757d; /* Muted gray */
+            text-decoration: none;
+            font-size: 15px;
+            transition: color 0.3s ease;
+        }
+
+        .register-link:hover {
+            color: #007bff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-card">
+        <h1>Welcome Back</h1>
+        <form action="login" method="post">
+            <div style="text-align: left;">
+                User Name <input type="text" name="uname" placeholder="Enter username" required>
+            </div>
+            <div style="text-align: left;">
+                Password <input type="password" name="upwd" placeholder="Enter password" required>
+            </div>
+            <input type="submit" value="Log-In"/>
+        </form>
+        <a href="Register.html" class="register-link">New User???</a>
+    </div>
+
+</body>
+</html>
