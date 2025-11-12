@@ -1,0 +1,37 @@
+package Pack1;
+
+import java.io.Serializable;
+
+public class UserBean implements Serializable
+{
+	public UserBean() {}
+	private String Id;
+	private String name;
+	private String password;
+	public String getId() {
+		return Id;
+	}
+	public void setId(String id) {
+		Id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	public String getRole() {
+		return role;
+	}
+	public void setRole(String role) {
+		this.role = role;
+	}
+	private String role;
+	
+}
