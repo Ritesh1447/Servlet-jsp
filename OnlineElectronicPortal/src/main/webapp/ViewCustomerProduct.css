@@ -1,0 +1,124 @@
+@charset "ISO-8859-1";
+  body {
+            background-image: url('https://png.pngtree.com/background/20230413/original/pngtree-business-e-shopping-picture-image_2422998.jpg');
+            background-size: cover; 
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+        .container {
+            background-color: transparent !important;
+        }
+
+        .btn-gold {
+            background: linear-gradient(45deg, #FFD700, #FFA500); 
+            border: none;
+            color: #000;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .btn-gold:hover {
+            background: linear-gradient(45deg, #FFA500, #FFD700);
+            box-shadow: 0 0 10px #FFD700;
+            color: #000;
+        }
+        .btn-outline-gold {
+             color: #FFD700;
+             border-color: #FFD700;
+             font-weight: bold;
+             transition: all 0.3s ease;
+        }
+        .btn-outline-gold:hover {
+             color: #000;
+             background-color: #FFD700;
+             border-color: #FFD700;
+        }
+        
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1020;
+            background: rgba(0, 0, 0, 0.7) !important; 
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid #FFD700; 
+        }
+
+        .navbar .nav-link:not(.btn) {
+            color: #fff !important;
+            font-weight: 600;
+            padding: 10px 15px;
+            transition: color 0.3s, text-shadow 0.3s, background-color 0.3s;
+        }
+        .navbar .nav-link:not(.btn):hover {
+            color: #FFD700 !important;
+            text-shadow: 0 0 8px #FFD700;
+            background-color: rgba(255, 215, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .navbar-brand {
+            color: #fff !important;
+            font-weight: 700;
+            animation: helloGlow 5s infinite alternate;
+            transition: color 0.3s;
+            text-shadow: 0 0 5px #FFD700;
+        }
+        @keyframes helloGlow {
+            0% { color: #fff; text-shadow: 0 0 5px #FFD700; }
+            100% { color: #FFD700; text-shadow: 0 0 10px #FFA500; }
+        }
+
+        .main-heading {
+            color: #e0c865 !important;
+            background: rgba(0, 0, 0, 0.6) !important;
+            font-weight: 700;
+            text-shadow: 0 0 5px #FFD700;
+            padding: 15px !important;
+            border-radius: 10px !important;
+            border: 1px solid #FFD700;
+            transition: all 0.3s ease-in-out;
+        }
+        .main-heading:hover {
+            letter-spacing: 1px;
+            box-shadow: 0 0 15px #FFD700;
+        }
+
+        .product-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            background: rgba(0, 0, 0, 0.6) !important;
+            backdrop-filter: blur(8px);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.2); 
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.4); 
+        }
+        .card-img-top {
+            height: 200px; 
+            object-fit: cover; 
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        #productCarousel .carousel-item img {
+            height: 450px !important; 
+            object-fit: cover;
+        }
+        .product-card .text-muted {
+            color: #FFD700 !important;
+            font-weight: 500;
+        }
+        .product-card .text-success {
+            color: #90ee90 !important;
+        }
+
+        .footer {
+            background: rgba(0, 0, 0, 0.7) !important;
+            backdrop-filter: blur(5px);
+            border-top: 2px solid #FFD700;
+        }
+        .footer .text-muted {
+            color: #aaa !important;
+        }

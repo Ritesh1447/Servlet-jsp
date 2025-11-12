@@ -1,0 +1,80 @@
+@charset "ISO-8859-1";
+ body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background: url('https://png.pngtree.com/background/20230413/original/pngtree-business-e-shopping-picture-image_2422998.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+  }
+
+  .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .form-box {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    padding: 40px 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+    text-align: center;
+  }
+
+  h1 {
+    color: #FFD700;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px rgba(0,0,0,0.6);
+    font-style: italic;
+    text-decoration: underline;
+  }
+
+  label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px 0;
+    font-weight: 600;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+  }
+
+  input[type="text"]::placeholder {
+    color: #ddd;
+  }
+
+  input[type="submit"] {
+    background: linear-gradient(45deg, #FFD700, #FFA500);
+    border: none;
+    color: #000;
+    font-weight: bold;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.5);
+  }
+
+  input[type="submit"]:hover {
+    background: linear-gradient(45deg, #FFA500, #FFD700);
+    box-shadow: 0 10px 30px rgba(255, 235, 0, 0.9);
+    transform: translateY(-4px);
+  }

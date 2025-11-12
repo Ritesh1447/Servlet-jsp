@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Products</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="AddProduct.css">
+
+
+</head>
+<body>
+
+<div class="overlay">
+  <div class="form-box">
+    <h1>Add Products</h1>
+    <form action="aps" method="post">
+      <label for="pcode">Product Code</label>
+      <input type="text" id="pcode" name="pcode" placeholder="Enter product code" required>
+
+      <label for="pname">Product Name</label>
+      <input type="text" id="pname" name="pname" placeholder="Enter product name" required>
+
+      <label for="pcompany">Product Company</label>
+      <input type="text" id="pcompany" name="pcompany" placeholder="Enter product company" required>
+
+      <label for="pprice">Product Price</label>
+      <input type="text" id="pprice" name="pprice" placeholder="Enter product price" required>
+
+      <label for="pqty">Product Quantity</label>
+      <input type="text" id="pqty" name="pqty" placeholder="Enter product quantity" required>
+
+      <input type="submit" value="Add Product">
+    </form>
+  </div>
+</div>
+
+</body>
+</html>

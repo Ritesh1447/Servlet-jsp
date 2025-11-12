@@ -1,0 +1,95 @@
+@charset "ISO-8859-1";
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background: url('https://png.pngtree.com/background/20230413/original/pngtree-business-e-shopping-picture-image_2422998.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+  }
+
+  .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .content-box {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    padding: 40px 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+    text-align: center;
+  }
+
+  h1 {
+    color: #FFD700;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px rgba(0,0,0,0.6);
+    font-style: italic;
+    text-decoration: underline;
+  }
+
+  .product-list {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  .product-item {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 215, 0, 0.3);
+  }
+
+  .product-links a {
+    margin-left: 8px; /* small gap between Edit and Delete */
+    color: #FFD700;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    background: rgba(255, 215, 0, 0.15);
+    transition: background 0.3s ease;
+    display: inline-block;
+  }
+
+  .product-links a:first-child {
+    margin-left: 0; /* no margin on first link */
+  }
+
+  .product-links a:hover {
+    background: rgba(255, 215, 0, 0.45);
+    color: #000;
+  }
+
+  .logout-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #000;
+    background: linear-gradient(45deg, #FFD700, #FFA500);
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.5);
+    transition: all 0.3s ease;
+    user-select: none;
+  }
+
+  .logout-btn:hover {
+    background: linear-gradient(45deg, #FFA500, #FFD700);
+    box-shadow: 0 10px 30px rgba(255, 235, 0, 0.9);
+    transform: translateY(-4px);
+    color: #111;
+  }
