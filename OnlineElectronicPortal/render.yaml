@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: online-electronic-portal
+    env: docker
+    buildCommand: ""
+    startCommand: "bash start_tomcat.sh"
+    plan: free
